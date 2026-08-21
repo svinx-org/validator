@@ -1,0 +1,38 @@
+{
+    "name": "svinx/validator",
+    "description": "Validator schema for PHP",
+    "keywords": [
+        "Validator",
+        "schema"
+    ],
+    "homepage": "https://github.com/svinx-org/validator",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "EORBAH",
+            "email": "eor.bah545@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/svinx-org/validator/issues",
+        "source": "https://github.com/svinx-org/validator"
+    },
+    "autoload": {
+        "psr-4": {
+            "Svinx\\Validator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Svinx\\Validator\\Tests\\": "tests/",
+            "Svinx\\Validator\\Examples\\": "examples/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php tests"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.1"
+    }
+}

@@ -1,0 +1,10 @@
+/vendor/
+composer.lock
+/.archive/
+.env
+dump.rdb
+.php-cs-fixer.cache
+.vscode
+NOTES.md
+feats/
+main.php
