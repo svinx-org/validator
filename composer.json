@@ -5,6 +5,7 @@
         "Validator",
         "schema"
     ],
+    "version": "0.1.0",
     "homepage": "https://github.com/svinx-org/validator",
     "license": "MIT",
     "type": "library",
@@ -26,11 +27,12 @@
     "autoload-dev": {
         "psr-4": {
             "Svinx\\Validator\\Tests\\": "tests/",
-            "Svinx\\Validator\\Examples\\": "examples/"
+            "Svinx\\Validator\\Examples\\": "docs_src/"
         }
     },
     "scripts": {
-        "test": "phpunit --bootstrap vendor/autoload.php tests"
+        "test": "phpunit",
+        "lint": "php -l src/**"
     },
     "require-dev": {
         "phpunit/phpunit": "^13.1"
