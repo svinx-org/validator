@@ -1,6 +1,6 @@
 # Contributing to EorbahAPI
 
-Thank you for your interest in contributing to EorbahAPI.
+Thank you for your interest in contributing to Svinx projects.
 
 This project is currently under active development, and contributions are welcome as the framework evolves.
 

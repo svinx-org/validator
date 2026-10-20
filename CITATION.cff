@@ -11,12 +11,12 @@ authors:
   - given-names: Elhadj Oumar Rafiou
     family-names: Bah
     email: eor.bah545@gmail.com
-identifiers:
-  - type: url
-    value: 'https://developer.phoenixshareplus.com/solutions/eorbahapi'
-repository-code: 'https://github.com/phoenixshareplus/eorbahapi.git'
+repository-code: 'https://github.com/svinx-org/validator.git'
 abstract: >-
   PHP validator schema.
 keywords:
   - Validator
+  - PHP
+  - schema
+  - Model
 license: MIT
