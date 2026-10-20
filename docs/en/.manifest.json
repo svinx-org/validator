@@ -1,0 +1,61 @@
+{
+  "source_language": "fr",
+  "files": {
+    "configuration.md": {
+      "source_hash": "23da9907c262646e7504e8ab71c2966130001e63f8c28e07a0b8cbc16396618c",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "custom-validators.md": {
+      "source_hash": "eef355deeeb7d5384ac024d5bfc041f78bb84ffc388d2b5e33d6afb38ebc76be",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "errors.md": {
+      "source_hash": "7e04cc5fe9d87c5e03a1ec4a958c8fa5f3a761908678adc9451e5fea02ea25df",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "fields-and-constraints.md": {
+      "source_hash": "6531dd124eb2a053b4d84b1bbce98025cb0121cbb23329103151e7460b418120",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "first-steps.md": {
+      "source_hash": "a600210498c023197f1fca5fc547a9db238c1f575aeb80d43b83e79f84906c7a",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "index.md": {
+      "source_hash": "747ae01a5eb3cba9ae78efeaf55176cf7bdc0f797e38c3933df697643e8e3d81",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "installation.md": {
+      "source_hash": "fa1788c5e287667a2a32752519c56727f12ce05baad5b6e7f95849a7667aaf6c",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "nested-models.md": {
+      "source_hash": "fb5ea391096e8e75c41de8424e17d22649047e995849e2ff164032d5ab789ace",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "reference.md": {
+      "source_hash": "c4c0d0b9efb7c5fde82db01e06f84d997e21ee2dda14ac9572a4efdee7a971ac",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "schemas.md": {
+      "source_hash": "d87aeba890a047e38ea70dcc5fc1519383fe808be3e7ccea821fad914d87104e",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "settings.md": {
+      "source_hash": "6dd780d106c860458fd3cb43fdf2190728700898e646237583dbd9ed8ff7e869",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "type-adapter.md": {
+      "source_hash": "4f315da7a0b639c871be2c40b6d528aaab357bee17efd0206c388b11c33f0a72",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "typing.md": {
+      "source_hash": "0ac732198cbd77985df5421e97216bd8d2d97419053702dce75e1055884277fe",
+      "translated_at": "2026-10-20T08:36:47Z"
+    },
+    "validated-types.md": {
+      "source_hash": "df5d2131eeb6dd2e42a9964e6d5aed18b9cb35c83fffa996609006097cce35aa",
+      "translated_at": "2026-10-20T08:36:47Z"
+    }
+  }
+}

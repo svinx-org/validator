@@ -1,0 +1,76 @@
+site_name: Svinx Validator
+site_description: Validation de modèles et de schémas pour PHP, à la manière de Pydantic
+site_url: https://svinx-org.github.io/validator/
+repo_url: https://github.com/svinx-org/validator
+repo_name: svinx-org/validator
+docs_dir: docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Passer au thème sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au thème clair
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: fr
+          name: Français
+          default: true
+        - locale: en
+          name: English
+        - locale: es
+          name: Español
+        - locale: pt
+          name: Português
+        - locale: de
+          name: Deutsch
+        - locale: ko
+          name: 한국어
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+nav:
+  - Accueil: index.md
+  - Installation: installation.md
+  - Premiers pas: first-steps.md
+  - Champs et contraintes: fields-and-constraints.md
+  - Modèles imbriqués: nested-models.md
+  - Types validés: validated-types.md
+  - Validateurs personnalisés: custom-validators.md
+  - Types et annotations: typing.md
+  - TypeAdapter: type-adapter.md
+  - Configuration: configuration.md
+  - Settings: settings.md
+  - Schémas: schemas.md
+  - Erreurs: errors.md
+  - Référence API: reference.md
