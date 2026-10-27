@@ -3,9 +3,11 @@
     "description": "Validator schema for PHP",
     "keywords": [
         "Validator",
-        "schema"
+        "schema",
+        "Model",
+        "Pydantic",
+        "EorbahAPI"
     ],
-    "version": "0.1.0",
     "homepage": "https://github.com/svinx-org/validator",
     "license": "MIT",
     "type": "library",

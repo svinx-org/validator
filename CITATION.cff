@@ -19,4 +19,6 @@ keywords:
   - PHP
   - schema
   - Model
+  - Pydantic
+  - EorbahAPI
 license: MIT
