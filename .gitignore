@@ -10,3 +10,4 @@ main.php
 Graph.md
 __pycache__/
 *.pyc
+build

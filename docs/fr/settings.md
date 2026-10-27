@@ -5,7 +5,8 @@
 ## Déclarer des settings
 
 !!! example "docs_src/Settings/AppSettings.php"
-    ```php
+
+```php
     namespace Svinx\Validator\Examples\Settings;
 
     use Svinx\Validator\Field;
@@ -42,7 +43,7 @@
         #[Field(alias: 'jwt_secret')]
         public ?string $token = null;
     }
-    ```
+```
 
 ## La priorité des sources
 
@@ -167,7 +168,7 @@ new AppSettings(['db' => ['host' => 'explicit']])->db->host;   // "explicit"
 `env_file()` renvoie le chemin du fichier à charger :
 
 !!! example "docs_src/Settings/DotEnvSettings.php"
-    ```php
+```php
     class DotEnvSettings extends BaseSettings
     {
         public static function env_prefix(): string
@@ -184,16 +185,16 @@ new AppSettings(['db' => ['host' => 'explicit']])->db->host;   // "explicit"
         public int $count = 0;
         public string $quoted = '';
     }
-    ```
+```
 
-    ```dotenv
+```dotenv
     # un commentaire
     DOTENV_VALUE=from-file
     export DOTENV_COUNT=7
     DOTENV_QUOTED="valeur avec espaces"
-    ```
+```
 
-    ```php
+```php
     putenv('SVINX_ENV_FILE=/chemin/vers/.env');
 
     $settings = new DotEnvSettings();
@@ -201,7 +202,7 @@ new AppSettings(['db' => ['host' => 'explicit']])->db->host;   // "explicit"
     $settings->value;    // "from-file"
     $settings->count;    // 7
     $settings->quoted;   // "valeur avec espaces"
-    ```
+```
 
 Le format supporté est volontairement minimal :
 
@@ -241,25 +242,25 @@ Un modèle classique (`BaseModel`) **ne coerce pas** : la coercition est propre 
 `SecretStr` protège les valeurs sensibles :
 
 !!! example "docs_src/Settings/AppSettings.php"
-    ```php
+```php
     public ?SecretStr $api_key = null;
-    ```
+```
 
-    ```php
+```php
     $settings = AppSettings::load(['APP_API_KEY' => 'super-secret']);
 
     $settings->api_key->getSecretValue();   // "super-secret"
     (string) $settings->api_key;            // "**********"
     $settings->model_dump()['api_key'];     // "**********"
     $settings->model_dump_json();           // ne contient jamais la valeur réelle
-    ```
+```
 
 ## Champs requis
 
 Un propre champ sans défaut ni valeur d'environnement lève une `ValidationError` :
 
 !!! example "docs_src/Settings/RequiredSettings.php"
-    ```php
+```php
     class RequiredSettings extends BaseSettings
     {
         public string $database_url;
@@ -267,7 +268,7 @@ Un propre champ sans défaut ni valeur d'environnement lève une `ValidationErro
 
     RequiredSettings::load([]);
     // ValidationError : Le champ 'database_url' est requis.
-    ```
+```
 
 ## Sérialisation
 

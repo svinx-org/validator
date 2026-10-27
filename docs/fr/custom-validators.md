@@ -3,7 +3,7 @@
 `#[Field]` couvre les contraintes génériques. Pour vos règles métier, écrivez une méthode : c'est l'équivalent PHP de `@field_validator` de Pydantic.
 
 !!! example "docs_src/FieldValidators/Account.php"
-    ```php
+```php
     <?php
 
     namespace Svinx\Validator\Examples\FieldValidators;
@@ -57,7 +57,7 @@
             return $value;
         }
     }
-    ```
+```
 
 ## Signature
 

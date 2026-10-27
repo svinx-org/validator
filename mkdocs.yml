@@ -1,10 +1,17 @@
-site_name: Svinx Validator
-site_description: Validation de modèles et de schémas pour PHP, à la manière de Pydantic
-site_url: https://svinx-org.github.io/validator/
-repo_url: https://github.com/svinx-org/validator
-repo_name: svinx-org/validator
+site_name: svinx-validator
+site_description: Framework web PHP moderne pour construire des API — cours complet
+site_url: https://eorbah.github.io/svinx-validator/
+repo_url: https://github.com/EORBAH/svinx-validator
+repo_name: EORBAH/svinx-validator
 docs_dir: docs
-edit_uri: edit/main/docs/
+
+# Fichiers de travail qui ne doivent pas être publiés :
+# - language_names.yml : langues utilisées par scripts/translate.py ;
+# - .manifest.json : empreintes des traductions (docs/<lang>/.manifest.json).
+exclude_docs: |
+  language_names.yml
+  **/.manifest.json
+edit_uri: edit/develop/docs/
 
 theme:
   name: material
@@ -12,7 +19,9 @@ theme:
   features:
     - navigation.sections
     - navigation.top
+    - navigation.indexes
     - content.code.copy
+    - content.code.annotate
     - content.action.edit
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -39,14 +48,22 @@ plugins:
           default: true
         - locale: en
           name: English
-        - locale: es
-          name: Español
-        - locale: pt
-          name: Português
-        - locale: de
-          name: Deutsch
-        - locale: ko
-          name: 한국어
+          nav_translations:
+            Accueil: Home
+            Installation: Installation
+            Premiers pas: First steps
+            Champs et contraintes: Fields and constraints
+            Modèles imbriqués: Nested models
+            Types validés: Validated types
+            Validateurs personnalisés: Custom validators
+            Types et annotations: Typing
+            TypeAdapter: Type adapter
+            Configuration: Configuration
+            Settings: Settings
+            Schémas: Schemas
+            Erreurs: Errors
+            Référence API: Reference
+            
 
 markdown_extensions:
   - admonition
@@ -58,6 +75,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
 
 nav:
   - Accueil: index.md
@@ -74,3 +94,10 @@ nav:
   - Schémas: schemas.md
   - Erreurs: errors.md
   - Référence API: reference.md
+
+extra:
+  social:
+  - icon: octicons/mark-github-24
+    link: https://github.com/EORBAH/svinx-validator
+  - icon: fontawesome/brands/x-twitter
+    link: https://x.com/eor_bah545
