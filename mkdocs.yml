@@ -1,7 +1,7 @@
 site_name: svinx-validator
 site_description: Framework web PHP moderne pour construire des API — cours complet
 site_url: https://eorbah.github.io/svinx-validator/
-repo_url: https://github.com/EORBAH/svinx-validator
+repo_url: https://github.com/svinx-org/validator
 repo_name: EORBAH/svinx-validator
 docs_dir: docs
 
@@ -98,6 +98,6 @@ nav:
 extra:
   social:
   - icon: octicons/mark-github-24
-    link: https://github.com/EORBAH/svinx-validator
+    link: https://github.com/svinx-org/validator
   - icon: fontawesome/brands/x-twitter
     link: https://x.com/eor_bah545
