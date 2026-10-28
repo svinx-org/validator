@@ -7,14 +7,14 @@ name: Documentation site
 #   2. pousser sur main (ou lancer ce workflow manuellement).
 #
 # Comportement :
-#   - push sur main ou develop  → construit le site ;
+#   - push sur main  → construit le site ;
 #   - push sur main             → publie build/ sur GitHub Pages ;
 #   - pull request              → construit seulement (vérification) ;
 #   - workflow_dispatch         → construit, puis publie si lancé depuis main.
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
